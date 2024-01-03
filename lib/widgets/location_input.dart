@@ -30,6 +30,7 @@ class _LocationInputState extends State<LocationInput> {
     final lng = _pickedLocation!.longitude;
     return 'https://maps.googleapis.com/maps/api/staticmap?center=$lat,$lng=zoom=18&size=600x300&maptype=roadmap&markers=color:red%7Clabel:A%7C$lat,$lng&key=AIzaSyDLcwxUggpPZo8lcbH0TB4Crq5SJjtj4ag';
   }
+  // AIzaSyDLcwxUggpPZo8lcbH0TB4Crq5SJjtj4ag
 
   void _savePlace(double latitude, double longitude) async {
     final url = Uri.parse(
